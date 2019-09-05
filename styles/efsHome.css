@@ -1,0 +1,419 @@
+body{
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+  height: 100% !important;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ /* HEADER PART */
+header{
+  height: 76px;
+  width: 100%;
+  position: fixed;
+  padding: 1em;
+  z-index: 10000;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: background-color 1s;
+}
+
+.backgroundHeader{
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* HEADER NAV OVERLAY */
+#menuOverlay{
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 20000;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow:scroll;
+  text-align: center;
+}
+/*#menuOverlay{
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 20000;
+}
+
+#menuOverlay > div:first-of-type{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 21000;
+  background-color: #efefef;
+  top: 0px;
+  left: 0px;
+  opacity: 0.85;
+}
+
+#menuOverlay > div:nth-of-type(2){
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 22000;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+}*/
+
+.closeButton{
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+}
+
+.closeButton img{
+  height: 25px;
+  width: 25px;
+}
+
+.closeButton img:hover{
+  cursor: pointer;
+}
+
+.menuItems ul{
+  padding: 0px;
+}
+
+.menuItems li{
+  list-style: none;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 15px;
+  opacity: 0.7;
+}
+
+.menuLogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  -moz-justify-content: center;
+}
+
+.menuLogo img{
+  height: 8em;
+  width: 13em;
+}
+
+
+/* VIDEO SECTION */
+#videoSection{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#videoSection > div:first-of-type{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: none;
+}
+
+#videoOverlap{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+}
+
+.downArrow{
+  position: absolute;
+  width: 100%;
+  bottom: 2em;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  display: box;
+  display: -webkit-box;
+  display: -ms-box;
+  box-pack: center;
+  -webkit-box-pack: center;
+  -ms-box-pack: center;
+  box-align: center;
+  -ms-box-align: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  overflow: auto;
+}
+
+.downArrow div{
+  position: relative;
+  height: 50px;
+  width: 70px;
+  background-image: url("../assets/images/arrow-down.svg");
+  background-position: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: background-image 1s;
+}
+
+.downArrow div:hover{
+  background-image: url("../assets/images/arrow-down-hover.svg");
+}
+
+#videoOverlap > div:nth-of-type(2){
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  overflow: auto;
+}
+
+#audioPlayPause, #videoPlayPause{
+  display: block;
+  height: 2em;
+  width: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: right;
+  margin-right: 2em;
+  cursor: pointer;
+}
+
+#videoPlayPause{
+  background-image: url("../assets/images/pause-button.png");
+}
+
+#audioPlayPause{
+  background-image: url("../assets/images/volume-off.png");
+}
+
+video{
+  position: fixed;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+
+
+
+/* CONTENT SECTIONS CSS */
+#contentSections{
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.bgImgSection{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgImgDivOuter{
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  height: 200%;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+}
+
+
+.bgImgDiv{
+  position: relative;
+  height: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  cursor: pointer;
+}
+
+#youSection .bgImgDiv{
+  background-image: url("../assets/images/you.jpeg");
+}
+
+#usSection .bgImgDiv{
+  background-image: url("../assets/images/us.jpg");
+}
+
+#inheritanceTaxSection .bgImgDiv{
+  background-image: url("../assets/images/inheritance-tax.jpg");
+}
+
+#pensionsSection .bgImgDiv{
+  background-image: url("../assets/images/pensions.jpg");
+}
+
+#investmentPrinciplesSection .bgImgDiv{
+  background-image: url("../assets/images/investmentPrinciples.jpeg");
+}
+
+#contactSection .bgImgDiv{
+  background-image: url("../assets/images/contact.jpg");
+}
+
+/* CONTENT IMAGE HEADINGS */
+.contentImgHeading{
+  position: absolute;
+  z-index: 6000;
+  left: 3em;
+  bottom: 3em;
+      color: black/*#D84315*/;
+    text-shadow: #fff 1px 1px 1px;
+    font-weight: 400;
+  font-size: 3em;
+}
+
+#contactImagesSection{
+  z-index: 7000;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  display: box;
+  display: -ms-box;
+  box-pack: center;
+  -webkit-box-pack: center;
+  -ms-box-pack: center;
+  box-align: center;
+  -ms-box-align: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+}
+
+#emailSpan, #mobileSpan{
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 30%;
+  height: 4em;
+  margin-top: 40vh;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  display: box;
+  display: -webkit-box;
+  display: -ms-box;
+  box-pack: center;
+  -webkit-box-pack: center;
+  -ms-box-pack: center;
+  box-align: center;
+  -ms-box-align: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  /*align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;*/
+}
+
+#emailSpan div, #mobileSpan div{
+  position: absolute;
+  float: left;
+  width: 100%;
+  z-index: 7500;
+  display: table-cell;
+}
+
+#emailSpan img, #mobileSpan img{
+  width: 50px;
+}
+
+#emailSpan img, #mobileSpan img, #emailSpan label, #mobileSpan label{
+  -webkit-transition: visibility 0s, opacity 2s;
+}
+
+#emailSpan img, #mobileSpan img, #emailSpan:hover label, #mobileSpan:hover label{
+  opacity: 1;
+  visibility: visible;
+}
+
+#emailSpan label, #mobileSpan label, #emailSpan:hover img, #mobileSpan:hover img{
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* CONTENT SECTION DISPLAY */
+.contentSection{
+  position: relative;
+  width: 100%;
+  padding: 2em 2em 1em 2em;
+  overflow: hidden;
+  display: none;
+}
+
+.contentSection > div{
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 2em;
+}
+
+.contentSection > div > img{
+  text-align: center;
+  padding: 1em 0em 1em 0em;
+  margin: 0% 15% 0% 15%;
+}
+
+
+/* FONTS CSS*/
+.contentHeading{
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.contentSection p{
+  font-size: 16px;
+}
+
+.contentSection h2{
+  text-align: center;
+  font-weight: 400;
+}
+
+/* VIDEO JS HIDE UNNECESSAR BUTTONS */
+.vjs-big-play-button, .vjs-control-bar, .vjs-error-display, .vjs-caption-settings{
+  display: none;
+}

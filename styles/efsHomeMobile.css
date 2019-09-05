@@ -1,0 +1,102 @@
+@media only screen and (max-width: 768px) {
+
+  #menuOverlay > div:first-of-type{
+    overflow: scroll;
+  }
+  .bgImgDiv{
+    background-size: cover;
+  }
+
+  .contentImgHeading{
+    font-size: 2em;
+    left: 1em;
+    top: 5em;
+  }
+
+  .contentSection > div{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  #contactImagesSection{
+    flex-direction: column;
+    top: 5em;
+  }
+
+  #emailSpan, #mobileSpan{
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  #emailSpan img, #mobileSpan img{
+    width: 30px;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1000px){
+  .bgImgSection{
+    height: 60vh;
+  }
+
+  .contentImgHeading{
+    font-size: 2.2em;
+    left: 1em;
+    top: 4em;
+  }
+
+  #emailSpan img, #mobileSpan img{
+    width: 35px;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+
+  .contentImgHeading{
+    font-size: 4em;
+    left: 1em;
+    top: 4em;
+  }
+
+  #emailSpan img, #mobileSpan img{
+    width: 45px;
+  }
+}
+
+@media only screen and (min-width: 2000px) and (min-height: 1200px){
+
+  .contentImgHeading{
+    font-size: 6em;
+    left: 1em;
+    top: 6em;
+  }
+
+  #emailSpan img, #mobileSpan img{
+    width: 60px;
+  }
+
+  .menuItems li{
+    font-size: 3em;
+    padding: 25px;
+  }
+
+  .contentHeading{
+    font-size: 5em;
+  }
+
+  .contentSection p{
+    font-size: 2.2em;
+  }
+
+  .contentSection h2{
+    font-size: 3em;
+  }
+
+  .contentSection > div{
+    line-height: 4em;
+  }
+
+  video{
+    width: 100%;
+  }
+}
