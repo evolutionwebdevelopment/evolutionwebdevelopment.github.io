@@ -1,0 +1,216 @@
+@charset "UTF-8";
+#body {
+	background-color: #A9A9A9;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #7F7F7F;
+}
+#global {
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	width: 820px;
+	height: 607px;
+	margin-top: -303px;
+	margin-left: -410px;
+	background-color: #d0ccdb;
+}
+#flashContainer {
+	height: 341px;
+	width: 362px;
+	left: 46px;
+	top: 133px;
+	position: relative;
+}
+#logo {
+	height: 250px;
+	width: 235px;
+	position: absolute;
+	left: 408px;
+	top: 0px;
+	background-image: url(../images/efs_logo.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+#logo h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #008fa0;
+	margin-top: 250px;
+	margin-bottom: 0px;
+}
+#nav { height: 255px; width: 177px; position: absolute; left: 643px; top: 0px; overflow: hidden; border-left-width: 1px; border-left-style: solid; border-left-color: #008fa0; }
+#nav ul {
+	margin: 26px 26px 0px 0px;
+	padding: 0px;
+}
+#nav li {
+	list-style-type: none;
+	font-size: 12px;
+	padding-left: 12px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+}
+#nav li.currentSection {
+	background-color: #ddeff2;
+}
+#nav a {
+	text-decoration: none;
+	color: #7F7F7F;
+}
+#nav a:hover {
+	color: #2A8FA0;
+}
+#bodyCopy {
+	height: 186px;
+	width: 401px;
+	position: absolute;
+	left: 408px;
+	top: 250px;
+	overflow: auto;
+	font-size: 11px;
+	margin-left: 11px;
+	margin-top: 10px;
+	background-color: #A9A9A9;
+}
+#bodyCopy p {
+	margin-right: 11px;
+	margin-bottom: 18px;
+	line-height: 12px;
+	margin-top: 0px;
+}
+#bodyCopy h2 {
+	font-weight: normal;
+	margin-top: 0px;
+	font-size: 19px;
+	color: #2A8FA0;
+	margin-bottom: 18px;
+}
+#bodyCopy h2.largeHeading {
+	font-weight: normal;
+	margin-top: 0px;
+	font-size: 42px;
+	color: #2A8FA0;
+	margin-bottom: 18px;
+	line-height: 40px;
+}
+#bodyCopy h3 {
+	font-weight: normal;
+	margin-top: 0px;
+	font-size: 14px;
+	color: #2A8FA0;
+	margin-bottom: 18px;
+}
+#bodyCopy a {
+	color: #2A8FA0;
+	text-decoration: none;
+}
+#bodyCopy a.pdfLink {
+	font-size: 14px;
+}
+#bodyCopy ul {
+	margin: 0px 0px 17px;
+	padding: 0px;
+}
+#bodyCopy li {
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+	list-style-type: none;
+	background-image: url(../images/bullet.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#contact {
+	height: 28px;
+	width: 401px;
+	position: absolute;
+	left: 408px;
+	top: 459px;
+	overflow: hidden;
+	font-size: 12px;
+	margin-left: 11px;
+}
+#contact a {
+	color: #2A8FA0;
+	text-decoration: none;
+}
+#contact a:hover {
+	text-decoration: none;
+}
+form {
+	margin: 0px;
+}
+input.textField {
+	font-size: 11px;
+	margin-top: 5px;
+	padding: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 170px;
+}
+textarea.textArea {
+	font-size: 11px;
+	margin-top: 5px;
+	padding: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 364px;
+}
+#footer {
+	width: 820px;
+	position: absolute;
+	top: 567px;
+	height: 40px;
+	font-size: 12px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ddeff2;
+}
+#footer a {
+	color: #2A8FA0;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: none;
+}
+.telephoneNo { font-size: 14px; color: #000; }
+
+
+/*** SLIDESHOW **/
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:341px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+#video_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1000;
+}
